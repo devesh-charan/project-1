@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="responsive.css">
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! How can I help you" name="category">
+        <option value="ct">covid tracker ?</option>
+        <option value="cg">covid game ? </option>
+      </select>
+	  
+
+      <div data-conv-fork="category">
+        <div data-conv-case="cg">
+			<select data-conv-question="show us your problem" name="cg" class="active">
+				<option value="a">instruction</option>
+				<option value="b">bug report</option>
+			  </select>
+        </div>
+        <div data-conv-case="ct" data-conv-fork="first-question2">
+			<select data-conv-question="show us your problem" name="ct">
+				<option value="c">select nation</option>
+				<option value="d">intsruction</option>
+				<option value="e">bug report</option>
+			  </select>
+		
+        </div>
+      </div>
+	  <div data-conv-fork="cg">
+		<div data-conv-case="a">
+			<select data-conv-question="Press up arrow for jump. press side arrows for moving left and right.If you touch the virus you will Dai you can restart game by reloading the page is your query resolved  ? " name="a" class="active">
+				<option value="Y">yes</option>
+				<option value="N">no</option>
+			  </select>
+		</div>
+		<div data-conv-case="b" data-conv-fork="first-question2">
+			<input type="text" name="bug" data-conv-question="Please, write the bug">
+			<input type="text" name="name" data-conv-question="Please, Enter your name">
+			<input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+			<select data-conv-question="Please Conform">
+				<option value="Yes">Conform</option>
+			  </select>
+
+		</div>
+	  </div>
+      <div data-conv-fork="ct">
+        <div data-conv-case="c">
+			<select data-conv-question="Select the Dropbox option on the right hand side top return worldwide then search the nation in the Dropbox menu when you found it click on it then the map automatically takes you to the nation's now click on Red circle it will show the country is Flag its name,the total number of cases,recovered and death in that nation is your query resolved ? " name="c" class="active">
+				<option value="Y">yes</option>
+				<option value="N">no</option>
+			  </select>
+        </div>
+		<div data-conv-case="d" data-conv-fork="first-question2">
+			<select data-conv-question="In the covid tracker the covid case at present it will show  then it will show the total number of covid cases. the recovered and deaths follow the same pattern. the measurement scale k represent kilo m represent million. The graph below represent worldwide cases according to the months. You can use the right hand side table to see the total number of cases in Nations is your query resolved ? " name="d">
+				<option value="Y">yes</option>
+				<option value="N">no</option>
+			  </select>
+        </div>
+		<div data-conv-case="e" data-conv-fork="first-question2">
+			<input type="text" name="bug" data-conv-question="Please, write the bug">
+			<input type="text" name="name" data-conv-question="Please, Enter your name">
+			<input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+			<select data-conv-question="Please Conform">
+				<option value="Yes">Conform</option>
+			  </select>
+        </div>
+      </div>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>COVID TRACKER</h1>
+        </div>
+        <div class="button">
+            <a href="https://Ishitav03.github.io/Covid-Tracker" target="_blank" class="btn">Track Cases</a>
+            <a href="https://devesh2531.github.io/covid-game" target="_blank" class="btn">Covid Game</a>
+        </div>
+
+    </header>
+</body> 
+</html>
